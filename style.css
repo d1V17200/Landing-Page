@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .header,
@@ -20,9 +20,9 @@ body {
 .header{ 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
-    padding: 30px;
+    padding: 20px;
 }
 
 .logo {
@@ -45,12 +45,11 @@ li {
 
 .hero {
     display: flex;
-    flex: 1;
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
     background-color: #1F2937;
     padding-bottom: 80px;
-    gap: 20px;
     align-items: center;
 }
 
@@ -64,8 +63,9 @@ li {
 .blurb-title {
     font-size: 48px;
     color: #F9FAF8;
-    font-weight: 900px;
+    font-weight: bolder;
 }
+
 
 .blurb-text{
   display: flex;
@@ -77,17 +77,27 @@ li {
 }
 
 .but1{
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
     background: #3882F6;
     color: #F9FAF8;
+    font-weight: 600;
     justify-content: center;
     border-radius: 10px;
     border: 2px solid #3882F6;    
 }
 
-button:hover {
+button:hover,
+a:hover {
     cursor: pointer;
+}
+
+a {
+    all: unset;
+}
+
+a:visited {
+    text-decoration: none;;
 }
 .placeholder {
     display: flex;
@@ -107,16 +117,23 @@ button:hover {
     color: #1F2937;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-bottom: 10px;;
 }
 
 .main1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .item {
     display: flex;
     flex-direction: column;
@@ -145,13 +162,14 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 80px;
     background-color: #E5E7EB;
   }
 
   .text2 {
     display: flex;
     flex-direction: column;
+    text-align: justify;
     width: 700px;
     font-size: 36px;
     font-style: italic;
@@ -176,12 +194,13 @@ button:hover {
 
   .rounded-object {
     display: flex;
+    align-items: flex-start;
     width: 700px;
     flex-direction: column;
     background-color: #3882F6;
     border-radius: 10px;
-    padding: 30px;
-  }
+    padding: 40px 80px;
+}
 
 .ro-title {
     font-size: 20px;
@@ -189,15 +208,18 @@ button:hover {
     color:#F9FAF8;
 }
   .ro-text {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
     color: #F9FAF8;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 100px;
   }
 
   .but2 {
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 35px;
+    font-weight: 600;
     background-color: #3882F6;
     color: #F9FAF8;
     justify-content: center;
